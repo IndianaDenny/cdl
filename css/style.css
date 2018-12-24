@@ -1,0 +1,107 @@
+
+
+
+body,h1,h5 {font-family: "Raleway", sans-serif}
+body, html {height: 100%}
+
+
+
+body {
+    background-image: url('../img/bg.jpg');
+    min-height: 100%;
+    background-position: center;
+    background-size: cover;
+}
+
+button {
+	font-size:24px;
+	
+}
+
+div#display-test {
+	
+	
+    background-color: lightgrey;
+    width: 99%;
+    border: 5px solid black;
+    padding: 5px;
+    margin: 5px;
+
+}
+
+div#myBar {
+	 background-color: lightblue;
+	
+}
+
+#options {
+	
+	font-size:28px;
+}
+
+#score {
+	
+	font-size:32px;
+}
+
+
+.hidden{
+	
+	display:none;
+	
+}
+
+
+
+.results{
+		
+		
+		display:none;
+	
+		
+}
+
+
+
+
+
+
+
+
+
+footer{
+	
+	
+	position: absolute;
+    left: 0px;
+    top: 350px;
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
