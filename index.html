@@ -11,78 +11,81 @@
 <script src="js/cdl-practice-test.js"></script>
 <body>
 
-<div class="bgimg w3-display-container w3-text-white">
-  <div class="w3-display-middle w3-jumbo">
-    	
-  </div>
-  <div class="w3-display-topleft w3-container w3-xlarge">
-    <p><button  onclick="startQuiz()" class="w3-button w3-black">Class A</button></p>
-    <p><button onclick="document.getElementById('class-b').style.display='block'" class="w3-button w3-black">Class B</button></p>
-	<p><button onclick="document.getElementById('carriers').style.display='block'" class="w3-button w3-black">Carriers</button></p>
+<div class="w3-display-container w3-text-white" style="height:80vh">
+ 
+<header class="w3-display-container w3-content w3-wide" >
 
-  </div>
-  <div class="w3-display-bottomleft w3-container">
-    <p class="w3-xlarge">open</p>
-    <p class="w3-large">Decatur Indiana</p>
-   
-  </div>
+<div class="w3-display-topleft w3-container w3-xlarge w3-bar">
+  <p><button onclick="startQuiz()" class="w3-button w3-black w3-mobile w3-bar-item">Class A</button></p>
+  <p><button onclick="document.getElementById('class-b').style.display='block'" class="w3-button w3-black w3-mobile w3-bar-item">Class
+      B</button></p>
+  <p><button onclick="document.getElementById('carriers').style.display='block'" class="w3-button w3-black w3-mobile w3-bar-item">Carriers</button></p>
+
+  <p><button onclick="document.getElementById('stops').style.display='block'" class="w3-button w3-black w3-mobile w3-bar-item ">Truck
+      Stops</button>
+  </p>
+  <p><button onclick="document.getElementById('hotels').style.display='block'" class="w3-button w3-black w3-mobile w3-bar-item">Hotels</button>
+  </p>
+  <p>
+    <button onclick="document.getElementById('contact').style.display='block'" class="w3-button w3-black w3-mobile w3-bar-item">Contact</button>
+  </p>
+
+
 </div>
-
+</header>
 <!-- Class-A Modal -->
 <div id="class-a" class="w3-modal">
   <div class="w3-modal-content w3-animate-zoom">
     <div class="w3-container w3-black w3-display-container">
       <span onclick="document.getElementById('class-a').style.display='none'" class="w3-button w3-display-topright w3-large">x</span>
-      	<h1>Class A CDL Practice Test</h1> 
-			 <span  >	<h2 class="hidden" id="number">of</h2> 
-				
-		<div id="bar" class="w3-light-grey">
-		<div id="myBar" class="w3-container w3-black" style="height:24px;width:10%"></div>
-		
-	</div>
- <h2 class="hidden" id="score">score</h2></span>
+      <h1>Class A CDL Practice Test</h1>
+      <span>
+        <h2 class="hidden" id="number">of</h2>
+
+        <div id="bar" class="w3-light-grey">
+          <div id="myBar" class="w3-container w3-black" style="height:24px;width:10%"></div>
+
+        </div>
+        <h2 class="hidden" id="score">score</h2>
+      </span>
     </div>
 
-	
 
-	<hr class="results">
-		<h1 id="theResults" class="results">results</h1>
-	<hr class="results" >	
-			<div id="display-test"  class="hidden">
-					<br>
-					
-						
-						
-						
-						
-					<span class="hidden"  id="checkAnswer">	</span>
-						<h2 class="hidden" id="ask"></h2>
-						
-							<span class="hidden" id="options">
-							
-							</span>
-						
-						<br>
-								<button onclick=checkAnswer(); id="btnCheck" class="hidden"  > Check Answer </button>
-						
-	</div>
+    <hr class="results">
+    <h1 id="theResults" class="results">results</h1>
+    <hr class="results">
+    <div id="display-test" class="hidden">
+      <br>
 
-	
+
+      <span class="hidden" id="checkAnswer"> </span>
+      <h2 class="hidden" id="ask"></h2>
+
+      <span class="hidden" id="options">
+
+      </span>
+
+      <br>
+      <button onclick=checkAnswer(); id="btnCheck" class="hidden"> Check Answer </button>
+
+    </div>
+
+
     <div class="w3-container w3-black">
-     <p> advertising goes here </p>
+      <p> advertising goes here </p>
     </div>
     <div class="w3-container">
-     
+
     </div>
     <div class="w3-container w3-black">
-     
+
     </div>
     <div class="w3-container">
-      
+
     </div>
   </div>
 </div>
-
+<!-- end Class-A Modal -->
 
 
 <!-- Class-B Modal -->
@@ -90,40 +93,32 @@
   <div class="w3-modal-content w3-animate-zoom">
     <div class="w3-container w3-black w3-display-container">
       <span onclick="document.getElementById('class-b').style.display='none'" class="w3-button w3-display-topright w3-large">x</span>
-      	<h1>CDL Practice Test </h1>
-		<h3>Class B</h3>
-		<span>progress bar here</span>
+      <h1>CDL Practice Test </h1>
+      <h3>Class B</h3>
+      <span>progress bar here</span>
     </div>
 
-	
-	  
-	
-	
-	
-	
-	
+
+
+
+
+
+
+
     <div class="w3-container w3-black">
-     <p> advertising goes here </p>
+      <p> advertising goes here </p>
     </div>
     <div class="w3-container">
-     
+
     </div>
     <div class="w3-container w3-black">
-     
+
     </div>
     <div class="w3-container">
-      
+
     </div>
   </div>
 </div>
-
-
-
-
-
-
-
-
 
 
 
@@ -135,27 +130,47 @@
       <h1>Contact</h1>
     </div>
     <div class="w3-container">
-      <p>Reserve a table, ask for today's special or just send us a message:</p>
-      <form action="/action_page.php" target="_blank">
-        <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Name" required name="Name"></p>
-        <p><input class="w3-input w3-padding-16 w3-border" type="number" placeholder="How many people" required name="People"></p>
-        <p><input class="w3-input w3-padding-16 w3-border" type="datetime-local" placeholder="Date and time" required name="date" value="2017-11-16T20:00"></p>
-        <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Message \ Special requirements" required name="Message"></p>
-        <p><button class="w3-button" type="submit">SEND MESSAGE</button></p>
+      <p> send us a message:</p>
+      <form name="contact" method="POST" data-netlify="true">
+        <p>
+          <label>Your Name: <input type="text" name="name" /></label>
+        </p>
+        <p>
+          <label>Your Email: <input type="email" name="email" /></label>
+        </p>
+        <p>
+          <label>Message: <textarea name="message"></textarea></label>
+        </p>
+        <p>
+          <button type="submit">Send</button>
+        </p>
       </form>
+    </div>
     </div>
   </div>
 </div>
-
-
-<footer>
-<div class="footer" id="fnav">
-
-	<p><h3 onclick="document.getElementById('stops').style.display='block'" class="w3-button w3-red">Truck Stops</h3></p>
-	<p><h3 onclick="document.getElementById('hotels').style.display='block'" class="w3-button w3-red">Hotels</h3></p>
-	<p><h3 onclick="document.getElementById('contact').style.display='block'" class="w3-button w3-red">Contact</h3></p>
 </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<footer class="w3-panel">
+  <span class=" w3-text-white">Site design by: <a href="https://vdenny.com">vdenny </a> </span>
+
+
+
 </footer>
+
+
 </body>
 </html>
 
