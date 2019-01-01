@@ -6,47 +6,89 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="css/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+
+<!-- custom css -->
 <link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="sass/dw-theme-black.css">
 
+
+<!-- custom javascript -->
 <script src="js/cdl-practice-test.js"></script>
-<body>
+  
 
-<div class="w3-display-container w3-text-white" style="height:80vh">
+<!-- --------------------------------- -->
+<body class="dw-theme-light">
+
+    <!-- ---------begin w3-display-container------------------------ -->
+<div class="w3-display-container dw-theme-l3" ">
  
-<header class="w3-display-container w3-content w3-wide" >
 
-<div class="w3-display-topleft w3-container w3-xlarge w3-bar">
-  <p><button onclick="startQuiz()" class="w3-button w3-black w3-mobile w3-bar-item">Class A</button></p>
-  <p><button onclick="document.getElementById('class-b').style.display='block'" class="w3-button w3-black w3-mobile w3-bar-item">Class
-      B</button></p>
-  <p><button onclick="document.getElementById('carriers').style.display='block'" class="w3-button w3-black w3-mobile w3-bar-item">Carriers</button></p>
+    <!-- ------------begin header--------------------- -->
+<header class="w3-display-container w3-content " >
 
-  <p><button onclick="document.getElementById('stops').style.display='block'" class="w3-button w3-black w3-mobile w3-bar-item ">Truck
-      Stops</button>
-  </p>
-  <p><button onclick="document.getElementById('hotels').style.display='block'" class="w3-button w3-black w3-mobile w3-bar-item">Hotels</button>
-  </p>
-  <p>
-    <button onclick="document.getElementById('contact').style.display='block'" class="w3-button w3-black w3-mobile w3-bar-item">Contact</button>
-  </p>
+
+    <!-- ------------begin w3-container--------------------- -->
+<div class=" w3-container w3-display-topleft w3-bar dw-theme-d3">
+  
+  <h5>
+<button onclick="startQuiz()" class="w3-button w3-mobile w3-bar-item">Class A</button>
+  </h5>
+   
+ <h5>
+<button onclick="document.getElementById('class-b').style.display='block'" class="w3-button w3-mobile w3-bar-item">Class
+  B</button>
+ </h5>
+  
+   <h5>
+<button onclick="document.getElementById('carriers').style.display='block'" class="w3-button w3-mobile w3-bar-item">Carriers</button>
+   </h5>
+    
+   <h5>
+<button onclick="document.getElementById('stops').style.display='block'" class="w3-button w3-mobile w3-bar-item ">Truck
+  Stops
+</button>
+   </h5>
+ 
+
+  <h5>
+<button onclick="document.getElementById('hotels').style.display='block'" class="w3-button w3-mobile w3-bar-item">
+  Hotels
+</button>
+  </h5>
+ 
+  <h5>
+  <button onclick="document.getElementById('contact').style.display='block'" class="w3-button w3-mobile w3-bar-item">Contact</button>
+
+  </h5>
+    
+  
+ 
+  
 
 
 </div>
+  <!-- ----------end ---w3-container-------------------- -->
 </header>
+  <!-- -------------end header-------------------- -->
+
+
+
+
+
 <!-- Class-A Modal -->
 <div id="class-a" class="w3-modal">
   <div class="w3-modal-content w3-animate-zoom">
-    <div class="w3-container w3-black w3-display-container">
+    <div class="w3-container w3-black w3-display-container dw-theme-d2">
       <span onclick="document.getElementById('class-a').style.display='none'" class="w3-button w3-display-topright w3-large">x</span>
       <h1>Class A CDL Practice Test</h1>
       <span>
         <h2 class="hidden" id="number">of</h2>
 
-        <div id="bar" class="w3-light-grey">
+        <div id="bar" class="dw-theme-l2">
           <div id="myBar" class="w3-container w3-black" style="height:24px;width:10%"></div>
 
         </div>
-        <h2 class="hidden" id="score">score</h2>
+        <h3 class="hidden" id="score">score</h3>
       </span>
     </div>
 
@@ -54,7 +96,7 @@
     <hr class="results">
     <h1 id="theResults" class="results">results</h1>
     <hr class="results">
-    <div id="display-test" class="hidden">
+    <div id="display-test " class="hidden w3-padding">
       <br>
 
 
@@ -72,7 +114,7 @@
 
 
     <div class="w3-container w3-black">
-      <p> advertising goes here </p>
+      <p> </p>
     </div>
     <div class="w3-container">
 
@@ -95,7 +137,7 @@
       <span onclick="document.getElementById('class-b').style.display='none'" class="w3-button w3-display-topright w3-large">x</span>
       <h1>CDL Practice Test </h1>
       <h3>Class B</h3>
-      <span>progress bar here</span>
+      <span></span>
     </div>
 
 
@@ -106,7 +148,7 @@
 
 
     <div class="w3-container w3-black">
-      <p> advertising goes here </p>
+      <p> </p>
     </div>
     <div class="w3-container">
 
@@ -119,7 +161,7 @@
     </div>
   </div>
 </div>
-
+<!-- end Class-B Modal -->
 
 
 <!-- Contact Modal -->
@@ -147,15 +189,12 @@
       </form>
     </div>
     </div>
-  </div>
+ </div>
+<!-- end Contact Modal -->
+  
+
 </div>
-</div>
-
-
-
-
-
-
+  <!-- ------------end w3-display-container--------------------- -->
 
 
 
@@ -164,13 +203,13 @@
 
 
 <footer class="w3-panel">
-  <span class=" w3-text-white">Site design by: <a href="https://vdenny.com">vdenny </a> </span>
-
-
+  <span class=" dw-theme-l1 w3-text-white">Site design by: <a href="https://vdenny.com">vdenny </a> </span>
 
 </footer>
 
 
 </body>
+  <!-- --------------------------------- -->
+
 </html>
 

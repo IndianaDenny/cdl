@@ -1,0 +1,80 @@
+/* dw-theme-black-css */
+.dw-theme-light {
+  color: #4d4d4d !important;
+  background-color: #b3b3b3 !important;
+}
+
+.dw-theme-light a:hover {
+  color: #cdcdcd !important;
+  background-color: #4d4d4d !important;
+}
+
+.dw-theme-l1 {
+  color: #404040 !important;
+  background-color: #b3b3b3 !important;
+}
+
+.dw-theme-l1 a:hover {
+  color: #cdcdcd !important;
+  background-color: #4d4d4d !important;
+}
+
+.dw-theme-l2 {
+  color: #343434 !important;
+  background-color: #cdcdcd !important;
+}
+
+.dw-theme-l2 a:hover {
+  color: #cdcdcd !important;
+  background-color: #4d4d4d !important;
+}
+
+.dw-theme-l3 {
+  color: #272727 !important;
+  background-color: #d9d9d9 !important;
+}
+
+.dw-theme-l3 a:hover {
+  color: #cdcdcd !important;
+  background-color: #4d4d4d !important;
+}
+
+.dw-theme-dark {
+  color: #b3b3b3 !important;
+  background-color: #4d4d4d !important;
+}
+
+.dw-theme-dark a:hover {
+  color: white !important;
+  background-color: #b3b3b3 !important;
+}
+
+.dw-theme-d1 {
+  color: silver !important;
+  background-color: #4d4d4d !important;
+}
+
+.dw-theme-d1 a:hover {
+  color: white !important;
+  background-color: #b3b3b3 !important;
+}
+
+.dw-theme-d2 {
+  color: #cdcdcd !important;
+  background-color: #343434 !important;
+}
+
+.dw-theme-d2 a:hover {
+  color: white !important;
+  background-color: #b3b3b3 !important;
+}
+
+.dw-theme-d3 {
+  color: #d9d9d9 !important;
+  background-color: #272727 !important;
+}
+
+.dw-theme-d3 a:hover {
+  color: white !important;
+  background-color: #b3b3b3 !important;
+}

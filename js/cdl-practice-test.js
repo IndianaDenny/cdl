@@ -14,30 +14,30 @@ let quiz = {
 
 let quest = [
 				{ 
-				question : "how many legs does a horse have?",
+				question: "If an aggressive driver confronts you, what should you do?",
 				image : "",
 				description : "",
-				explination : "",
-				right : "4 legs",
+				explination: "When confronted with an aggressive driver, your first priority should be to get out of their way. Do not provoke the driver by making eye contact or trying to race them, and do not let yourself be provoked by them, such as by reacting to gestures.",
+				right: "Try to get out of their way.",
 				wrong : [
-							"6 legs", 
-							"10 legs",
-							"8 legs",
-							"7 legs"
+							"Make eye contact.",
+							"Do not challenge them by racing.",
+							"Get out and fight.",
+							"Call the police."
 						]	
 				},
 				
 				{ 
-				question : "how many legs does a snake have?",
+				question: "If equipped with hydraulic brakes, how can the brakes be checked?",
 				image : "",
 				description : "",
 				explination : "",
-				right : "0 legs",
+				right: "Pump the brake three times and apply firm pressure for five seconds to the brake pedal. The brake pedal should not move",
 				wrong : [
-							"6 legs", 
-							"5 legs",
-							"9 legs",
-							"22 legs"
+							"Pump the brakes three times and apply firm pressure for five seconds to the brake pedal. The brake pedal should slowly move toward the floor",
+							"Pump the brakes three times and apply firm pressure for five seconds to the brake pedal. The brake pedal should slowly rise",
+							"Pump the brakes three times and apply firm pressure for five seconds to the brake pedal. THe brake pedal should be easy to push to the floor",
+							"None of the above."
 						]	
 				},
 				
@@ -168,15 +168,14 @@ function nextQuest () {
 
 function askTheQuestion (count, choices, question) {
 		
-		
-		
+				
 		let choiceString="";
 		let i = 0;
 		//let selected = question[count].right; 	// selected array is all the right answers in the current question	
 	
 			
 			//         RENDER HTML  HERE
-			console.log(question); //log question
+			//console.log(question); //log question
 		
 			document.getElementById('ask').innerHTML = question;		// render question 
 			
@@ -198,13 +197,13 @@ function askTheQuestion (count, choices, question) {
 			
 function checkAnswer () {
 	var t=(quiz.count/quest.length)*100 + "%";
-		console.log(t);
+		//console.log(t);
 		
 		document.getElementById('myBar').style.width=t;
 		
 		if (quiz.status == false) {
 			
-			console.log("quiz is over");
+			//console.log("quiz is over");
 			gradeMe();
 			
 		}else{
@@ -225,7 +224,7 @@ function checkAnswer () {
 													
 														
 														
-													quiz.score++//update score
+													quiz.score++ ; //update score
 															
 												
 													

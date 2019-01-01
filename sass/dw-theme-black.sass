@@ -1,0 +1,103 @@
+/* dw-theme-black-sass */
+
+// dw-theme-light
+//color begins light gets darker
+//bkg begins dark gets lighter
+$color-light: rgb(77, 77, 77);
+$background-light: rgb(179, 179, 179);
+$background-l1: lighten($background-light, 5%);
+$background-l2: lighten($background-light, 10%);
+$background-l3: lighten($background-light, 15%);
+$color-l1: darken($color-light, 5%);
+$color-l2: darken($color-light, 10%);
+$color-l3: darken($color-light, 15%);
+$highlight: lighten($color-light, 50%);
+// dark theme
+$color-dark: rgb(179, 179, 179);
+$background-dark: rgb(77, 77, 77);
+$background-d1: darken($background-dark, 5%);
+$background-d2: darken($background-dark, 10%);
+$background-d3: darken($background-dark, 15%);
+$color-d1: lighten($color-dark, 5%);
+$color-d2: lighten($color-dark, 10%);
+$color-d3: lighten($color-dark, 15%);
+$highdark: lighten($background-dark, 80%);
+@mixin color-mixin($some-color) {
+    color: $some-color !important;
+}
+
+@mixin background-mixin($some-color) {
+    background-color: $some-color !important;
+}
+
+.dw-theme-light {
+    @include color-mixin($color-light);
+    @include background-mixin($background-light);
+    a:hover {
+        @include color-mixin($highlight);
+        @include background-mixin($background-dark);
+    }
+}
+
+.dw-theme-l1 {
+    @include color-mixin($color-l1);
+    @include background-mixin($background-light);
+    a:hover {
+        @include color-mixin($highlight);
+        @include background-mixin($background-dark);
+    }
+}
+
+.dw-theme-l2 {
+    @include color-mixin($color-l2);
+    @include background-mixin($background-l2);
+    a:hover {
+        @include color-mixin($highlight);
+        @include background-mixin($background-dark);
+    }
+}
+
+.dw-theme-l3 {
+    @include color-mixin($color-l3);
+    @include background-mixin($background-l3);
+    a:hover {
+        @include color-mixin($highlight);
+        @include background-mixin($background-dark);
+    }
+}
+
+.dw-theme-dark {
+    @include color-mixin($color-dark);
+    @include background-mixin($background-dark);
+    a:hover {
+        @include color-mixin($highdark);
+        @include background-mixin($background-light);
+    }
+}
+
+.dw-theme-d1 {
+    @include color-mixin($color-d1);
+    @include background-mixin($background-dark);
+    a:hover {
+        @include color-mixin($highdark);
+        @include background-mixin($background-light);
+    }
+}
+
+.dw-theme-d2 {
+    @include color-mixin($color-d2);
+    @include background-mixin($background-d2);
+    a:hover {
+        @include color-mixin($highdark);
+        @include background-mixin($background-light);
+    }
+}
+
+.dw-theme-d3 {
+    @include color-mixin($color-d3);
+    @include background-mixin($background-d3);
+    a:hover {
+        @include color-mixin($highdark);
+        @include background-mixin($background-light);
+    }
+}
